@@ -1,0 +1,6 @@
+sources:
+  - name: DBT
+    database: neural-quarter-486504-r2
+    schema: SampleData
+    tables:
+      - name: Main
