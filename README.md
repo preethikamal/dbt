@@ -55,26 +55,8 @@ SELECT * EXCEPT(row_num) FROM deduplicated WHERE row_num = 1
 
 ```
 
-## Setup and Usage
-
-1. **Profiles:** Ensure your `profiles.yml` is configured for Google BigQuery.
-2. **Dependencies:** Run `dbt deps` to install any required packages.
-3. **Run Models:**
-```bash
-dbt run --select stg_shipping_lines
-
-```
-
-
-4. **Test Models:**
-```bash
-dbt test
 
 ```
 
 
 
-## Future Enhancements
-
-* Implementing incremental materialization for high-volume Shopify tables.
-* Expanding the macro library to handle Shopify's `discount_allocations` and `refunds` logic.
